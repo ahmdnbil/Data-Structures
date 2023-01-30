@@ -20,6 +20,7 @@ void main()
         printf("To exit press to                 ==> 2\n");
         printf("To delete node press             ==> 3\n");
         printf("To add node whith specific index ==> 4\n");
+        printf("To view length of list           ==> 5\n");
         printf("Your choice: ");
         scanf("%d",&local_intChoice);
         if(local_intChoice == 0)
@@ -58,6 +59,14 @@ void main()
             printf("Index: ");
             scanf("%d",&local_intIndex);
             addNodeIndex(local_intNewNode2,local_intIndex);
+            puts(" ");
+            puts(" ");
+        }
+        else if(local_intChoice==5)
+        {
+            puts(" ");
+            puts(" ");
+            printf("length: %d",nodeLength());
             puts(" ");
             puts(" ");
         }

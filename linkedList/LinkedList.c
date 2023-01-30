@@ -130,3 +130,19 @@ void deleteNode(u32 val)
         }
     }
 }
+
+int nodeLength(void)
+{
+    int count =0;
+    node *last=&head;
+    if(last==NULL) return count;
+    else
+    {
+        while(last != NULL)
+        {
+            count++;
+            last = last->Next;
+        }        
+    }
+    return count;
+}
