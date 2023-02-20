@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-#define StackEntry int
 
 #include "stack.h"
 
